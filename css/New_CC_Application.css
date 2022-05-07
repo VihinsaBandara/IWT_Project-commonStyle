@@ -93,7 +93,7 @@ img{
 
 }
 .input-text, #f-dropdown{
-  width: 100%;
+  width: 98%;
   padding:1rem;
   border:none;
   outline:none;
@@ -102,4 +102,16 @@ img{
   font-size:1rem;
   font-family: var(--o-ft-family);
 }
+
+.input-text2 {
+  width: 49%;
+  padding:1rem;
+  border:none;
+  outline:none;
+  border-bottom: 3px solid var(--sec-bg-clr);
+  border-radius:10px;
+  font-size:1rem;
+  font-family: var(--o-ft-family);
+}
+
 
