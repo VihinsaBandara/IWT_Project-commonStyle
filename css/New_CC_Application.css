@@ -24,6 +24,12 @@ img{
   border:none;
   background: transparent;
 }
+.ccaform{
+  margin: auto;
+}
+.Countrycont{
+  margin: auto;
+}
 
 
 :root{
@@ -53,5 +59,47 @@ img{
   --pri-lin-transition: all 0.5s linear;
   --sec-transition: all 1s ease;
   --sec-lin-transition: all 1s linear;
+  --pri-box-shadow:6px 10px 18px #69696934;
+  --sec-box-shadow:10px 15px 20px #6969699f;
+}
+.main-section{
+  width:100%;
+  height:auto;
+  background-image: url(../images/back3.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  padding:5rem 0;
+}
+.ccaform{
+  width:70%;
+  margin: 0 auto;
+  background-color: var(--pri-bg-clr);
+  box-shadow:var(--pri-box-shadow);
+  padding:2rem;
+}
+.row{
+  width:70%;
+  margin: 0 auto;
+  background-color: var(--pri-bg-clr);
+  box-shadow:var(--pri-box-shadow);
+  padding:2rem;
+  font-size:1.15rem;
+  line-height:2;
+}
+
+.legend-ccform{
+  font-size: 2rem;
+
+}
+.input-text, #f-dropdown{
+  width: 100%;
+  padding:1rem;
+  border:none;
+  outline:none;
+  border-bottom: 3px solid var(--sec-bg-clr);
+  border-radius:10px;
+  font-size:1rem;
+  font-family: var(--o-ft-family);
 }
 
