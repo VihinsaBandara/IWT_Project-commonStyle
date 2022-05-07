@@ -30,7 +30,11 @@ img{
 .Countrycont{
   margin: auto;
 }
-
+h1{
+  font-size:  2rem;
+  text-align: center;
+  
+}
 
 :root{
   --pri-sec-clr:rgb(233, 126, 126);
@@ -44,7 +48,7 @@ img{
   --h-ft-family:'Roboto', sans-serif;
   --o-h-ft-family:'Poppins', sans-serif;
   --o-ft-family:'Lato', sans-serif;
-  --h1-ft-size:2rem;
+  --h1-ft-size:2rem; 
   --h2-ft-size:1.75rem;
   --h3-ft-size:1.5rem;
   --gen-ft-size:0.875rem;
@@ -89,10 +93,10 @@ img{
 }
 
 .legend-ccform{
-  font-size: 2rem;
+  font-size: 1rem;
 
 }
-.input-text, #f-dropdown{
+.input-text{
   width: 98%;
   padding:1rem;
   border:none;
@@ -103,7 +107,7 @@ img{
   font-family: var(--o-ft-family);
 }
 
-.input-text2 {
+.input-text2, #f-dropdown {
   width: 49%;
   padding:1rem;
   border:none;
