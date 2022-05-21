@@ -76,24 +76,23 @@
       <h1>New Credit card Application</h1>
       <div class="ccaform">
       <form method="post" action="CCcontroller.php">
-        <fieldset>
-          
+
           <div class="row">
            <label for="Name">Full Name:</label><br>
            <input type="text" id="fname" class="input-text2" name="firstname" placeholder="First Name">
            <input type="text" id="lname" class="input-text2" name="lastname" placeholder="Last Name"><br>
 
            <label for="Date of Birth">Date of Birth:</label><br>
-           <input type="date" id="dob" class="input-text" placeholder="date of birth"><br>
+           <input type="date" id="dob" class="input-text" name="dob" placeholder="date of birth"><br>
 
            <label for="Address">Address:</label><br>
            <input type="text" id="address" class="input-text" name="address" placeholder="Street address"><br>
            <input type="text" id="street" class="input-text" name="street" placeholder="Street address 2"><br>
 
-           <input type="text" class="input-text2" placeholder="City">
-           <input type="text" class="input-text2" placeholder="Province"><br>
+           <input type="text" class="input-text2" placeholder="City" name="city">
+           <input type="text" class="input-text2" placeholder="Province" name="province"><br>
 
-           <input type="number" class="input-text2" placeholder="Zip / Postal code">
+           <input type="number" class="input-text2" placeholder="Zip / Postal code" name="PostalCode">
            <select name="country" id="f-dropdown">
              <option value="">country</option>
              <option value="Sri Lanka">Sri Lanka</option>
@@ -102,16 +101,49 @@
              <option value="Uganda">Uganda</option>
            </select>
 
-           <lable for="accountCon">Do you have LTB saving Account</lable>
-
+           <lable for="accountCon" class="checkbox" value="No" onclick="Yes">Do you have LTB Bank Account <input type="checkbox" name="OldBankAccount">
+        
+           </lable><br />
+          <label for="accountNo">Account Number(Optional):</label>
+          <input type="number" name="accountNo" id="accountNo" class="input-text3">
+          <br />
+           <label for="employeeStatus">Employee Status:</label>
+           <input type="text" name="employeeStatus" id="employeeStatus" placeholder="Employee Status" class="input-text">
+           <br />
+           <label for="workplace">Workplace:</label>
+           <input type="text" name="Workplace" id="workplace" class="input-text" placeholder="Name of Workplace" >
+           <br />
+           <label for="monthlyincome">Monthly Income:</label>
+           <input type="number" name="monthlyincome" id="monthlyincome" class="input-text" placeholder="Monthly Income in LKR">
+           <br />
+           <label for="workTPNumber"> Workplace Telephone Number:</label>
+           <input type="number" name="workTPNumber" id="workTPNumber" class="input-text" placeholder="Telephone Number">
+           
+           
+           <select name="cardType" id="f-dropdown" class="input-text">
+             <option value="">Credit Card Type</option>
+             <option value="Blue">Blue Card</option>
+             <option value="Black">Black Card</option>
+             <option value="Red">Red Card</option>
+           </select>
           
 
+           <div class="agree-item">
+            <input type="checkbox" name="agree" id="agree" value="1"  required>
+            <label for=""><strong style="color:rgb(40, 109, 238);">*</strong>I agree to <span>terms & conditions</span></label>
+          </div>
+          <div class="form-btn">
+            <input type="reset" value="Reset" id="resetBtn" name="reset">
+            <input type="submit" value="Submit Application" id="submitBtn" name="submit">
+          </div>
+        </div>
+
             
-           </div>
+           
 
 
 
-       </fieldset>
+       
 
 
       </form>

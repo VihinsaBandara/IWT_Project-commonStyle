@@ -113,5 +113,59 @@ h1{
   font-size:1rem;
   font-family: var(--o-ft-family);
 }
+.input-text3 {
+  width: 65%;
+  padding:0.4rem;
+  border:none;
+  outline:none;
+  border-bottom: 3px solid var(--sec-bg-clr);
+  border-radius:10px;
+  font-size:1rem;
+  font-family: var(--o-ft-family);
+}
+.checkbox{
+
+  border:none;
+  outline:none;
+  font-size: 1rem;
+  font-family: var(--o-ft-family);
+}
+
+
+.agree-item{
+  width:100%;
+  padding:2rem 0;
+  font-family: var(--pri-ft-family);
+  font-size:1rem;
+}
+#resetBtn{
+  background-color:var(--pri-clr);
+  color:var(--pri-bg-clr);
+}
+
+.form-btn{
+  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.form-btn input{
+  padding:0.875rem 1rem;
+  border: none;
+  outline: none;
+  font-size:1rem;
+  letter-spacing:1px;
+  border-radius:50px;
+  cursor:pointer;
+  background-color:var(--sec-bg-clr);
+  color: var(--pri-bg-clr);
+  transition: var(--pri-transition);
+}
+
+.form-btn input:hover{
+  border-radius:10px;
+}
+
 
 
